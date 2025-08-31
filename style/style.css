@@ -1,0 +1,52 @@
+body {
+  margin: 0; padding: 0;
+  background: black;
+  overflow: hidden;
+  height: 100vh;
+    display: flex;
+  justify-content: center;
+  align-items: center; 
+  user-select: none;
+  cursor: auto;
+}
+
+#btn {
+  position: absolute;        /* Cố định so với màn hình */
+  top: 50%;                  /* Căn giữa theo chiều dọc */
+  left: 50%;                 /* Căn giữa theo chiều ngang */
+  transform: translate(-50%, -50%); /* Đẩy tâm về chính giữa */    
+  padding-inline: 15px;
+  padding-block: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+#btn:hover {
+  background-color: #227226;
+  color: yellow;
+  transform: translate(-50%, -50%) scale(1.05);
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2);
+}
+
+#btn:active {
+  transform: translate(-50%, -50%) scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 255, 42, 0.67);
+}
+
+
+canvas {
+  display: block;
+  background: black;
+}
+/* style.css hoặc trong <style> */
+#second-scene {
+  display: none;
+  position: absolute; 
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+}
